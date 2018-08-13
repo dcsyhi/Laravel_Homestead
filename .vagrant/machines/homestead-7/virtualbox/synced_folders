@@ -1,1 +1,0 @@
-{"virtualbox":{"/home/vagrant/Code":{"type":null,"mount_options":["uid=1000","gid=1000"],"guestpath":"/home/vagrant/Code","hostpath":"C:/xampp/htdocs/Homestead/homestead","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"C:/xampp/htdocs","disabled":false,"__vagrantfile":true}}}
