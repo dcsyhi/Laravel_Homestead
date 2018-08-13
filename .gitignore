@@ -10,3 +10,5 @@ img/
 dashboard/
 webalizer/
 vendor/
+.vagrant/machines/
+xampp/
