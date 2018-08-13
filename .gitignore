@@ -1,0 +1,12 @@
+after.sh
+aliases
+applications.html
+composer.json
+composer.lock
+id_rsa
+id_rsa.pub
+laravelapp/
+img/
+dashboard/
+webalizer/
+vendor/
