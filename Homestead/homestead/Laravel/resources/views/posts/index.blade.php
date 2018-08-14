@@ -16,7 +16,7 @@
                 </tr>
             </thead>
             <tbody>
-            @foreach ($posts as $post)
+            @foreach ( $posts as $post)
                 <tr>
                     <td>
                         <a href="{{ url('posts/'.$post->id) }}">{{ $post->title }}</a>
