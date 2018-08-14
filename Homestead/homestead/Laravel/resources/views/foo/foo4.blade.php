@@ -4,5 +4,9 @@
     {{-- 個別ページの内容 --}}
     <h2>{{ $title }}</h2>
     <p>{{ $body }}</p>
+    @component('components.message')
+
+    @endcomponent
 @endsection
+
 
