@@ -15,7 +15,7 @@ class UserController extends Controller
     public function index()
     {
 	    // ユーザーを一覧表示する
-	    $users = User::all();
+	    $users = User::paginate(5);
 	    return view('users.index', ['users' => $users]);
     }
 

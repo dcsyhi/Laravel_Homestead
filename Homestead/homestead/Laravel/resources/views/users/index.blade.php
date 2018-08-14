@@ -2,6 +2,9 @@
     $title = __('Users');
 @endphp
 @extends('layouts.my')
+<style>
+    .pagination { font-size:10pt; display:inline-block;text-align: center;}
+</style>
 @section('content')
 <div class="container">
     <h1>{{ $title }}</h1>
@@ -24,4 +27,7 @@
         </table>
     </div>
 </div>
+@endsection
+@section('pagination')
+{{ $users->links() }}
 @endsection

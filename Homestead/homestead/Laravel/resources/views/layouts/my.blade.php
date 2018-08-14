@@ -83,7 +83,9 @@
         <main class="py-4">
             @yield('content')
         </main>
-    </div>
+        <div class="mx-auto" style="width: 200px;">
+            @yield('pagination')
+        </div>
 
     <!-- Scripts -->
     <script src="{{ asset('js/jquery-3.3.1.slim.min.js')}}"></script>
