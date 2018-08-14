@@ -5,7 +5,12 @@
     <h2>{{ $title }}</h2>
     <p>{{ $body }}</p>
     @component('components.message')
-
+    @endcomponent
+    @component('components.alert-success')
+    @endcomponent
+    @component('components.alert-heading')
+    @endcomponent
+    @component('components.badge')
     @endcomponent
 @endsection
 

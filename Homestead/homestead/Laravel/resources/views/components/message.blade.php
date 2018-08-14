@@ -1,6 +1,6 @@
 <!-- 切り替えボタンの設定 -->
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
- ココを押すと表示
+ サインイン
 </button>
 
 <!-- モーダルの設定 -->
@@ -8,13 +8,25 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">モーダルのタイトル</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="閉じる">
+        <h5 class="modal-title" id="exampleModalLongTitle">サインイン画面</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="CLOSE">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        ...
+<form>
+  <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+    </div>
+  </div>
+  <div class="form-group row">
+    <div class="col-sm-10 offset-sm-2">
+      <button type="submit" class="btn btn-primary">Sign in</button>
+    </div>
+  </div>
+</form>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
@@ -23,35 +35,4 @@
     </div>
   </div>
 </div>
-
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@president">社長向けモーダルを開く</button>
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@vice-president">副社長向けモーダルを開く</button>
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@officer">重役向けモーダルを開く</button>
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">新メッセージ</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="閉じる">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="form-group">
-            <label for="recipient-name">受信者：</label>
-            <input type="text" class="form-control" id="recipient-name">
-          </div>
-          <div class="form-group">
-            <label for="message-text">メッセージ：</label>
-            <textarea class="form-control" id="message-text"></textarea>
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
-        <button type="button" class="btn btn-primary">送信</button>
-      </div>
-    </div>
-  </div>
-</div>
+<br />

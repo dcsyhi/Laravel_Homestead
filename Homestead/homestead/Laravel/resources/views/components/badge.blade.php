@@ -1,0 +1,1 @@
+<h5>ユーザーを追加しました <span class="badge badge-secondary">New</span></h5>
