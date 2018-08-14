@@ -30,4 +30,6 @@
         </table>
     </div>
 </div>
+@section('pagination')
+{{ $posts->links() }}
 @endsection

@@ -25,3 +25,6 @@
     </div>
 </div>
 @endsection
+@section('pagination')
+{{ $users->links() }}
+@endsection
