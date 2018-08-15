@@ -23,8 +23,6 @@
     @endcomponent
     @component('components.list-group')
     @endcomponent
-    @component('components.card-footer')
-    @endcomponent
     @component('components.dropdown')
     @endcomponent
 
@@ -39,30 +37,9 @@
     </div>
     <div class="col-sm-7">
       <!-- Content -->
-    @component('components.card-footer')
-    @endcomponent
-    @component('components.card-footer')
-    @endcomponent
-    @component('components.card-footer')
-    @endcomponent
-    @component('components.card-footer')
-    @endcomponent
-    @component('components.card-footer')
-    @endcomponent
-    @component('components.card-footer')
-    @endcomponent
-    @component('components.card-footer')
-    @endcomponent
-    @component('components.card-footer')
-    @endcomponent
-    @component('components.card-footer')
-    @endcomponent
-    @component('components.card-footer')
-    @endcomponent
-    @component('components.card-footer')
-    @endcomponent
-    @component('components.card-footer')
-    @endcomponent
+      @include('components.card-footer')
+      @include('components.card-footer')
+      @include('components.card-footer')
     </div>
   </div>
 </div>
