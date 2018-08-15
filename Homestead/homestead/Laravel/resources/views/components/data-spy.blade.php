@@ -31,8 +31,14 @@
   <p>For <br> this <br> rampant <br> abuse <br> of <br> br-tags.</p>
   <h4 id="village5">5日目</h4>
   <p>For <br> this <br> rampant <br> abuse <br> of <br> br-tags.</p>
+<<<<<<< HEAD
   <h4 id="village6">6日目</h4>
   <p>For <br> this <br> rampant <br> abuse <br> of <br> br-tags.</p>
   <h4 id="village7">7日目</h4>
+=======
+  <h4 id="village5">6日目</h4>
+  <p>For <br> this <br> rampant <br> abuse <br> of <br> br-tags.</p>
+  <h4 id="village5">7日目</h4>
+>>>>>>> 2a73ccb373e51c58e400d88ba1f73f270ddeb9a6
   <p>For <br> this <br> rampant <br> abuse <br> of <br> br-tags.</p>
 </div>
