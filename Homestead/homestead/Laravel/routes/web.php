@@ -19,6 +19,9 @@ Route::get('foo', function(){
 	return 'Foo!';
 });
 
+Route::get('/page/', function(){
+    return view('page.index');
+});
 
 Route::get('foo/fool', 'FooController@fool');
 Route::get('foo/foo2', 'FooController@foo2');
@@ -32,4 +35,3 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('users', 'UserController');
 Route::resource('posts', 'PostController');
-
