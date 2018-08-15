@@ -2,7 +2,7 @@
 <style type="text/css" scoped="">
 .scrollspy-example {
     position: relative;
-    height: 200px;
+    height: 5000px;
     margin-top: .5rem;
     overflow: auto;
 }
@@ -22,17 +22,31 @@
 </nav>
 <div data-spy="scroll" data-target="#navbar-example2" data-offset="0" class="scrollspy-example">
   <h4 id="village1">1日目</h4>
-  <p>May <br> the <br> gods <br> forgive <br> me.</p>
+  <p>
+      @include('components.card-footer')
+  </p>
   <h4 id="village2">2日目</h4>
-  <p>For <br> this <br> rampant <br> abuse <br> of <br> br-tags.</p>
+  <p>
+      @include('components.card-footer')
+  </p>
   <h4 id="village3">3日目</h4>
-  <p>For <br> this <br> rampant <br> abuse <br> of <br> br-tags.</p>
+  <p>
+      @include('components.card-footer')
+  </p>
   <h4 id="village4">4日目</h4>
-  <p>For <br> this <br> rampant <br> abuse <br> of <br> br-tags.</p>
+  <p>
+      @include('components.card-footer')
+  </p>
   <h4 id="village5">5日目</h4>
-  <p>For <br> this <br> rampant <br> abuse <br> of <br> br-tags.</p>
+  <p>
+      @include('components.card-footer')
+  </p>
   <h4 id="village6">6日目</h4>
-  <p>For <br> this <br> rampant <br> abuse <br> of <br> br-tags.</p>
+  <p>
+      @include('components.card-footer')
+  </p>
   <h4 id="village7">7日目</h4>
-  <p>For <br> this <br> rampant <br> abuse <br> of <br> br-tags.</p>
+  <p>
+      @include('components.card-footer')
+  </p>
 </div>
