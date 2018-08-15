@@ -11,6 +11,7 @@
                 <tr>
                     <th>{{ __('ID') }}</th>
                     <th>{{ __('Name') }}</th>
+                    <th>{{ __('Email')}}</th>
                 </tr>
             </thead>
             <tbody>
@@ -18,6 +19,7 @@
                     <tr>
                         <td>{{ $user->id }}</td>
                         <td><a href="{{ url('users/'.$user->id) }}">{{ $user->name }}</a></td>
+                        <td>{{ $user->email }}</td>
                     </tr>
                 @endforeach
             </tbody>
