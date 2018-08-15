@@ -25,6 +25,50 @@
     @endcomponent
     @component('components.card-footer')
     @endcomponent
+    @component('components.dropdown')
+    @endcomponent
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <!-- Content -->
+    @component('components.list-group')
+    @endcomponent
+    </div>
+    <div class="col-sm-1">
+    </div>
+    <div class="col-sm-7">
+      <!-- Content -->
+    @component('components.card-footer')
+    @endcomponent
+    @component('components.card-footer')
+    @endcomponent
+    @component('components.card-footer')
+    @endcomponent
+    @component('components.card-footer')
+    @endcomponent
+    @component('components.card-footer')
+    @endcomponent
+    @component('components.card-footer')
+    @endcomponent
+    @component('components.card-footer')
+    @endcomponent
+    @component('components.card-footer')
+    @endcomponent
+    @component('components.card-footer')
+    @endcomponent
+    @component('components.card-footer')
+    @endcomponent
+    @component('components.card-footer')
+    @endcomponent
+    @component('components.card-footer')
+    @endcomponent
+    </div>
+  </div>
+</div>
+
+@include('layouts.footer')
 @endsection
+
 
 
