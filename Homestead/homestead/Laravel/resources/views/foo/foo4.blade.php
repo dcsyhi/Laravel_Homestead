@@ -41,6 +41,8 @@
       @include('components.card-footer')
       @include('components.card-footer')
       @include('components.modal-fade')
+      @include('components.nav-tabs')
+      @include('components.data-spy')
     </div>
   </div>
 </div>
