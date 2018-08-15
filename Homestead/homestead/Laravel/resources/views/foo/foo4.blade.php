@@ -40,6 +40,7 @@
       @include('components.card-footer')
       @include('components.card-footer')
       @include('components.card-footer')
+      @include('components.modal-fade')
     </div>
   </div>
 </div>
