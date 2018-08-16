@@ -38,12 +38,11 @@ Route::resource('posts', 'PostController');
 
 Route::get('/dbtest/query', function(){
     // connection先を明示しなかった場合、デフォルト接続先のDBを見に行く
-    //$rows = DB::select('SELECT * FROM users LIMIT 1;');
-    //var_dump($rows);
+    $rows = DB::select('SELECT * FROM users LIMIT 1;');
+    var_dump($rows);
 
     // connection先を明示して投稿用のデータベースを参照しにいく
-    $rows = DB::connection('jinro');
-    //->select('SELECT * FROM posts LIMIT 1;');
+    $rows = DB::connection('jinro')->select('SELECT * FROM db2_tables LIMIT 1;');
     var_dump($rows);
 });
 
