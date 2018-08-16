@@ -11,6 +11,11 @@
 |
 */
 
+Auth::routes();
+
+Route::resource('users', 'UserController');
+Route::resource('posts', 'PostController');
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -28,13 +33,9 @@ Route::get('foo/foo2', 'FooController@foo2');
 Route::get('foo/foo3', 'FooController@foo3');
 Route::get('foo/foo4', 'FooController@foo4');
 
-
-Auth::routes();
-
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::resource('users', 'UserController');
-Route::resource('posts', 'PostController');
+Route::get('/enma/db', 'DatabaseSampleController@index');
 
 Route::get('/dbtest/query', function(){
     // connection先を明示しなかった場合、デフォルト接続先のDBを見に行く
