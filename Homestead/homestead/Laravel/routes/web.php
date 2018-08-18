@@ -37,6 +37,13 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/enma/db', 'DatabaseSampleController@index');
 
+Route::get('/sample/post', function(){
+    return view('post_sample.post');
+});
+Route::post('/sample/post', function(){
+    return view('post_sample.post');
+});
+
 Route::get('/dbtest/query', function(){
     // connection先を明示しなかった場合、デフォルト接続先のDBを見に行く
     $rows = DB::select('SELECT * FROM users LIMIT 1;');
