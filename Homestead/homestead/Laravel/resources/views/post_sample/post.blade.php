@@ -2,11 +2,17 @@
 
 // POSTとして送信されてきたときのみ実行
 // （通常アクセスはGET, フォーム送信はPOST）
+$fp = fopen('data.csv', 'a+b');
+
 if($_SERVER['REQUEST_METHOD'] === 'POST'){
-    $fp = fopen('data.csv', 'ab');
     fputcsv($fp, [$_POST['name'], $_POST['text']]);
-    fclose($fp);
+    rewind($fp);
 }
+while ($row = fgetcsv($fp)){
+    $rows[] = $row;
+}
+fclose($fp);
+
 ?>
 
 <!DOCTYPE html>
@@ -24,6 +30,14 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
 </section>
 <section>
     <h2>投稿一覧</h2>
+<?php if (!empty($rows)): ?>
+    <ul>
+<?php foreach ($rows as $row): ?>
+        <li><?=$row[1]?> (<?=$row[0]?>)</li>
+<?php endforeach; ?>
+    </ul>
+<?php else: ?>
     <p>投稿はまだありません</p>
+<?php endif; ?>
 </section>
 
