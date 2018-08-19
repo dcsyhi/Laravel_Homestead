@@ -2,7 +2,7 @@
 <style type="text/css" scoped="">
 .scrollspy-example {
     position: relative;
-    height: 5000px;
+    height: 500px;
     margin-top: .5rem;
     overflow: auto;
 }
@@ -27,26 +27,20 @@
   </p>
   <h4 id="village2">村 2日目</h4>
   <p>
-      @include('components.card-footer')
   </p>
   <h4 id="village3">村 3日目</h4>
   <p>
-      @include('components.card-footer')
   </p>
   <h4 id="village4">村 4日目</h4>
   <p>
-      @include('components.card-footer')
   </p>
   <h4 id="village5">村 5日目</h4>
   <p>
-      @include('components.card-footer')
   </p>
   <h4 id="village6">村 6日目</h4>
   <p>
-      @include('components.card-footer')
   </p>
   <h4 id="village7">村 7日目</h4>
   <p>
-      @include('components.card-footer')
   </p>
 </div>

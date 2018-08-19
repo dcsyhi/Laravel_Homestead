@@ -1,9 +1,8 @@
 <?php
+$fp = fopen('data.csv', 'a+b');
 
 // POSTとして送信されてきたときのみ実行
 // （通常アクセスはGET, フォーム送信はPOST）
-$fp = fopen('data.csv', 'a+b');
-
 if($_SERVER['REQUEST_METHOD'] === 'POST'){
     fputcsv($fp, [$_POST['name'], $_POST['text']]);
     rewind($fp);

@@ -16,7 +16,13 @@ window.Vue = require('vue');
  */
 
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
+Vue.component('sample', requier('./components/Sample.vue'));
 
 const app = new Vue({
     el: '#app'
 });
+
+const sample = new Vue({
+	el: '#test'
+});
+

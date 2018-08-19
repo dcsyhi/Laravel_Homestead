@@ -11,6 +11,8 @@
     <title>{{ env('APP_NAME') }}</title>
     <!-- Styles -->   
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+    <script src=" {{ mix('js/app.js') }}"></script>
+
 </head>
 <body>
     <div id="app">
@@ -81,6 +83,7 @@
 
         <main class="py-4">
             @yield('content')
+            @yield('vue')
         </main>
         <div class="mx-auto" style="width: 200px;">
             @yield('pagination')

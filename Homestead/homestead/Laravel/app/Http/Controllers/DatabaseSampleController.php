@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Http\Controllers\Controller,
+    Session;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -18,6 +20,10 @@ class DatabaseSampleController extends Controller
     }
 
     public function ses_get(Request $request){
+        $id = Session::getId();
+        $data = session()->all();
+        var_dump($id);
+        var_dump($data);
         $sesdata = $request->session()->get('msg');
         return view('post_sample.session', ['session_data' => $sesdata]);
     }
