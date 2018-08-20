@@ -11,9 +11,6 @@
     <div class="col-sm-4">
       <!-- Content -->
     @include('components.list-group')
-    @section('vue')
-        <example-component></example-component>
-    @endsection
     </div>
     <div class="col-sm-1">
     </div>

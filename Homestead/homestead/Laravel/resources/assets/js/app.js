@@ -19,7 +19,15 @@ Vue.component('example-component', require('./components/ExampleComponent.vue'))
 Vue.component('sample', requier('./components/Sample.vue'));
 
 const app = new Vue({
-    el: '#app'
+    el: '#app',
+    data: {
+      message: 'World'
+    },
+    methods: {
+      update() {
+        this.message = 'Vue.js'
+      }
+    }
 });
 
 const sample = new Vue({
