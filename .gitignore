@@ -12,3 +12,4 @@ webalizer/
 vendor/
 .vagrant/machines/
 xampp/
+.idea/
